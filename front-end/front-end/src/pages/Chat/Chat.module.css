@@ -1,0 +1,101 @@
+.content {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 80vh; 
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.content h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    margin: 30px 0;
+}
+
+.content .chat {
+    flex: 1; /* Faz com que o chat ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+}
+
+.content .chat .msg {
+    display: flex;
+    margin-bottom: 10px; /* Espaçamento entre mensagens */
+}
+
+.content .chat .msg img {
+    margin-right: 10px; /* Espaçamento entre a imagem e a mensagem */
+    width: 100px;
+}
+
+.content .chat .msg p {
+    background: #add8e6;
+    border: 1px solid blue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 17px;
+    max-width: 300px; /* Define uma largura máxima para as mensagens */
+    word-wrap: break-word; 
+}
+
+.content .bot {
+    display: flex;
+    justify-content: space-between; /* Alinha o input e o botão aos extremos */
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.content .bot input {
+    /* Faz com que o input ocupe todo o espaço disponível */
+    border: 3px solid #9fc5e8;
+    border-radius: 15px;
+    margin-right: 10px; /* Espaçamento entre o input e o botão */
+    font-weight: 500;
+    padding: 15px;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .bot button {
+    width: 100px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #add8e6;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 42px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .bot button:hover {
+    background-color: #9fc5e8; /* Um tom um pouco mais escuro quando o botão é hover */
+}
+
+.content .usuario {
+    display: flex;
+    justify-content: end; /* Alinha a mensagem do usuário ao centro */
+}
+
+.content .usuario .des {
+    background: #add8e6;
+    border: 1px solid blue;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 17px;
+    max-width: 300px; /* Define a largura máxima para a mensagem */
+    word-wrap: break-word; /* Garante que o texto quebre linhas se necessário */
+}

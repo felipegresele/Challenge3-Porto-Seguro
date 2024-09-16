@@ -1,0 +1,113 @@
+.menuNav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #04a4fc;
+    border-bottom: 1px solid #04a4fc;
+    padding: 10px 20px;
+    font-family: 'Poppins';
+}
+
+.menuNav img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.menuNav nav {
+    display: flex;
+    align-items: center;
+}
+
+.menuNav nav ul {
+    display: flex;
+    width: 500px;
+    margin-left: 70%;
+}
+
+.menuNav nav ul li {
+    margin-left: 10px; 
+    list-style-type: none;
+}
+
+.menuNav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+.login ul {
+    display: flex;
+    text-align: end;
+    width: 200px;
+    margin-left: 40%;
+    margin-top: 40px;
+
+    li {
+    list-style-type: none;
+}
+}
+
+a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Media Queries */
+@media (max-width: 1500px) {
+    .menuNav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuNav nav {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menuNav nav ul {
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+
+    .login ul {
+        text-align: center;  
+    }
+}
+
+@media (max-width: 500px) {
+    .menuNav {
+        padding: 5px 10px; 
+    }
+
+    .menuNav img {
+        width: 80px; 
+    }
+
+    .menuNav nav ul {
+        flex-direction: column; 
+        gap: 5px; 
+    }
+
+    .menuNav a {
+        font-size: 14px; 
+        margin: 0; 
+    }
+
+    .login ul {
+        padding: 10px 0;
+        flex-direction: column;
+        gap: 5px; 
+        margin-top: 10px; 
+    }
+
+    .login a {
+        font-size: 14px;
+    }
+}
